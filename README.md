@@ -78,9 +78,11 @@ Through this project, I practiced:
 
 This project is created for educational and learning purposes only. It is not affiliated with or endorsed by Spotify.
 
-## AUTHOR
 
-Created by **Ronak Ameta**
+## DEVELOPER
+
+**RONAK AMETA**
+
 
 
 
