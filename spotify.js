@@ -1,4 +1,5 @@
-// Javascript Code 
+// JAVASCRIPT
+
 
 let bt =document.querySelector(".abc");
 let bt2 =document.querySelector(".def");
@@ -133,12 +134,13 @@ form2.addEventListener("submit",(f)=>{
 
 
 
+// MENU
+
+let menu= document.querySelector(".menu");
+let active=document.querySelector(".com");
 
 
-
-
-
-
-
-
-
+menu.addEventListener("click",()=>{
+    active.classList.toggle("active");
+    main.classList.toggle("blur");
+});
