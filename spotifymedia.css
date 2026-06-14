@@ -3,7 +3,6 @@
 @media only screen and (min-width :200px) and (max-width:575px) {
 
     .nav li{
-        flex-direction: column;
         align-items: center;
     }
 
@@ -13,9 +12,36 @@
     }
     
     .com {
-        gap: 20px;
+        
+        position: absolute;
+        background-image: linear-gradient(to right,rgb(6, 114, 15) ,rgb(10, 76, 20));
+        height: 100vh;
+        width: 190px;
+        flex-direction: column;
+        top:0;
+        right:-190px;
+        margin: 0%;
+        padding: 0%;
+        text-align: center;
+        justify-content: center;
+        transition: 0.9s;
+        z-index: 999;
+        
     }
-
+    .menu{
+        display: block;
+        z-index: 999;
+        background: transparent;
+    }
+    .com.active{
+        right:0;
+    }
+    .blur{
+        filter: blur(4px);
+    }
+    .com ul{
+        margin: 15px;
+    }
     .ohk{
         width:200px ;
     }
