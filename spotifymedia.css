@@ -13,7 +13,7 @@
     
     .com {
         
-        position: absolute;
+        position: fixed;
         background-image: linear-gradient(to right,rgb(6, 114, 15) ,rgb(10, 76, 20));
         height: 100vh;
         width: 190px;
