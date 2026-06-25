@@ -52,13 +52,13 @@ form1.addEventListener("submit",(e)=>{
 
     }
     if ((regex1.test(input.value))){
-        w1.style.color="transparent";
+        w1.style.display="none";
         input.style.border= "2px solid white";
         input.style.boxShadow= "0 0 10px white";
     }
 
     if (regex2.test(passwd.value)){
-        w2.style.color="transparent";
+        w2.style.display="none";
         passwd.style.border= "2px solid white";
         passwd.style.boxShadow= "0 0 10px white";
     }
@@ -101,13 +101,13 @@ form2.addEventListener("submit",(f)=>{
 
     }
     if (regex1.test(input1.value)){
-        w3.style.color="transparent";
+        w3.style.display="none";
         input1.style.border= "2px solid white";
         input1.style.boxShadow= "0 0 10px white";
     }
 
     if (regex2.test(passwd1.value)){
-        w4.style.color="transparent";
+        w4.style.display="none";
         passwd1.style.border= "2px solid white";
         passwd1.style.boxShadow= "0 0 10px white";
     }
