@@ -43,7 +43,7 @@ form1.addEventListener("submit",(e)=>{
     let regex1=/^[a-zA-Z0-9_]{1,15}$/;
     let regex2=/^[0-9]{6}$/;
 
-    if ((input.value==="") || (passwd.value==="")){
+    if ((input.value.trim()==="") || (passwd.value.trim()==="")){
         e.preventDefault();
         w1.style.display="block";
         w2.style.display="block";
@@ -51,21 +51,21 @@ form1.addEventListener("submit",(e)=>{
         input.style.boxShadow= "0 0 10px white";
 
     }
-    if ((regex1.test(input.value))){
+    if ((regex1.test(input.value.trim()))){
         w1.style.display="none";
         input.style.border= "2px solid white";
         input.style.boxShadow= "0 0 10px white";
     }
 
-    if (regex2.test(passwd.value)){
+    if (regex2.test(passwd.value.trim())){
         w2.style.display="none";
         passwd.style.border= "2px solid white";
         passwd.style.boxShadow= "0 0 10px white";
     }
-    if ((regex2.test(passwd.value)) && (regex1.test(input.value))){
+    if ((regex2.test(passwd.value.trim())) && (regex1.test(input.value.trim()))){
         alert("Succesfully Log - In !!!");
     }
-    if(!regex1.test(input.value)) {
+    if(!regex1.test(input.value.trim())) {
         w1.style.display="block";
         input.style.border= "2px solid red";
         input.style.boxShadow= "0 0 10px red";
@@ -73,7 +73,7 @@ form1.addEventListener("submit",(e)=>{
         
     }
 
-    if (!regex2.test(passwd.value)){
+    if (!regex2.test(passwd.value.trim())){
         w2.style.display="block";
         passwd.style.border= "2px solid red";
         passwd.style.boxShadow= "0 0 10px red";
@@ -92,7 +92,7 @@ form2.addEventListener("submit",(f)=>{
     let regex1=/^[a-zA-Z0-9_]{1,15}$/;
     let regex2=/^[0-9]{6}$/;
 
-    if ((input1.value==="") || (passwd1.value==="")){
+    if ((input1.value.trim()==="") || (passwd1.value.trim()==="")){
         f.preventDefault();
         w3.style.display="block";
         w4.style.display="block";
@@ -100,19 +100,19 @@ form2.addEventListener("submit",(f)=>{
         input1.style.boxShadow= "0 0 10px white";
 
     }
-    if (regex1.test(input1.value)){
+    if (regex1.test(input1.value.trim())){
         w3.style.display="none";
         input1.style.border= "2px solid white";
         input1.style.boxShadow= "0 0 10px white";
     }
 
-    if (regex2.test(passwd1.value)){
+    if (regex2.test(passwd1.value.trim())){
         w4.style.display="none";
         passwd1.style.border= "2px solid white";
         passwd1.style.boxShadow= "0 0 10px white";
     }
     
-    if(!regex1.test(input1.value)) {
+    if(!regex1.test(input1.value.trim())) {
         w3.style.display="block";
         input1.style.border= "2px solid red";
         input1.style.boxShadow= "0 0 10px red";
@@ -120,14 +120,14 @@ form2.addEventListener("submit",(f)=>{
         
     }
 
-    if (!regex2.test(passwd1.value)){
+    if (!regex2.test(passwd1.value.trim())){
         w4.style.display="block";
         passwd1.style.border= "2px solid red";
         passwd1.style.boxShadow= "0 0 10px red";
         f.preventDefault();  
     }
 
-    if ((regex2.test(passwd1.value)) && (regex1.test(input1.value))){
+    if ((regex2.test(passwd1.value.trim())) && (regex1.test(input1.value.trim()))){
         alert("Succesfully Created Account !!!");
     }
 });
