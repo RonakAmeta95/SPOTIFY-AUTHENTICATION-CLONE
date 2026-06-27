@@ -364,5 +364,21 @@ form{
     color: rgb(175, 174, 174);
  }
 
+.abc,.def{
+    animation: pop 0.8s ease;
+}
+
+@keyframes pop{
+    0%{
+        transform: scale(0.5);
+        opacity: 0;
+    }
+
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
 
 
